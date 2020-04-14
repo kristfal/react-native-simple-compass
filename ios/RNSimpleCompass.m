@@ -24,6 +24,11 @@
     return self;
 }
 
++ (BOOL)requiresMainQueueSetup
+{
+    return YES;
+}
+
 #pragma mark - RCTEventEmitter
 
 - (NSArray<NSString *> *)supportedEvents {
