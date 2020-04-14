@@ -51,7 +51,7 @@ Then run pod install and rebuild your project.
 import RNSimpleCompass from 'react-native-simple-compass';
 
 const degree_update_rate = 3; // Number of degrees changed before the callback is triggered
-RNSimpleCompass.start(degree_update_rate, (degree) => {
+RNSimpleCompass.start(degree_update_rate, ({degree}) => {
   console.log('You are facing', degree);
   RNSimpleCompass.stop();
 });
